@@ -1,0 +1,6 @@
+name: My Learning
+type: module
+description: 'This modue is used to learning drupal module development.'
+package: Custom
+version: 1.0
+core_version_requirement: ^8 || ^9

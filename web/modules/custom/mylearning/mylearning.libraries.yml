@@ -1,0 +1,6 @@
+mylearning:
+  version: 1.x
+  js:
+    js/mylearning.js: {}
+  dependencies:
+    - core/jquery

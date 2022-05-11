@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function mylearning_theme() {
+  return [
+    'whatstoday' => [
+      'variables' => ['data' => NULL]
+    ],
+  ];
+}
+
+// What's today

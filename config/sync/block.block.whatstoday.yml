@@ -1,0 +1,20 @@
+uuid: 83814124-da49-4c1b-b6d4-e69d6aa05e34
+langcode: en
+status: true
+dependencies:
+  module:
+    - mylearning
+  theme:
+    - bartik
+id: whatstoday
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: whats_today
+settings:
+  id: whats_today
+  label: 'What''s today'
+  label_display: visible
+  provider: mylearning
+visibility: {  }

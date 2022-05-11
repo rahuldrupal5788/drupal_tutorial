@@ -1,0 +1,15 @@
+mylearning.demo_event_dispatcher_form:
+  path: 'custom-event-dispatch-form'
+  defaults:
+    _form: '\Drupal\mylearning\Form\CustomEventDispatchForm'
+    _title: 'Event Dispatcher Form'
+  requirements:
+    _permission: 'access administration pages'
+
+mylearning.mylearningpage:
+  path: 'mylearningpage'
+  defaults:
+    _controller: '\Drupal\mylearning\Controller\CustomController::myPage'
+    _title: 'My first page in Drupal9'
+  requirements:
+    _permission: 'access content'    

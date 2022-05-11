@@ -1,0 +1,11 @@
+services:
+  mylearning.twig_extension:
+    arguments: ['@renderer']
+    class: Drupal\mylearning\TwigExtension\TwigFilters
+    tags:
+      - { name: twig.extension }
+
+  mylearning.custom_event_subscriber:
+    class: Drupal\mylearning\EventSubscriber\CustomEventSubScriber
+    tags:
+      - { name: 'event_subscriber' }      
