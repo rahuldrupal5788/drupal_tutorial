@@ -1,0 +1,29 @@
+uuid: 831619bf-b5c0-44b5-8f56-e42d07b1de31
+langcode: en
+status: true
+dependencies:
+  module:
+    - imageapi_optimize_avif
+    - imageapi_optimize_resmushit
+    - webp
+name: webp_remush_it
+label: 'WebP + Remush.it'
+processors:
+  c5dfb416-249a-41de-9650-7e71f607a4fd:
+    id: imageapi_optimize_avif
+    data:
+      quality: '95'
+    weight: -8
+    uuid: c5dfb416-249a-41de-9650-7e71f607a4fd
+  a0ef9023-ffab-461b-9b22-4dd432240353:
+    id: webp_webp
+    data:
+      quality: '100'
+    weight: -9
+    uuid: a0ef9023-ffab-461b-9b22-4dd432240353
+  7ffc7f78-669e-471b-a10a-d9b65b8304a1:
+    id: resmushit
+    data:
+      quality: 100
+    weight: -10
+    uuid: 7ffc7f78-669e-471b-a10a-d9b65b8304a1

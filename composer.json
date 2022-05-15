@@ -16,9 +16,16 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "~1.0",
+        "drupal/consumer_image_styles": "^4.0",
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
+        "drupal/filefield_paths": "^1.0@beta",
+        "drupal/imageapi_optimize_avif": "1.0.x-dev@dev",
+        "drupal/imageapi_optimize_resmushit": "^2.0@beta",
+        "drupal/imagemagick": "^3.3",
+        "drupal/webp": "^1.0@beta",
         "drush/drush": "^11.0"
     },
     "conflict": {
@@ -31,7 +38,8 @@
         "allow-plugins": {
             "composer/installers": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true
+            "drupal/core-project-message": true,
+            "cweagans/composer-patches": true
         }
     },
     "extra": {
@@ -68,6 +76,11 @@
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
+        },
+        "patches": {
+            "drupal/filefield_paths": {
+                "Fix issues like Call to undefined method BaseFieldDefinition::getThirdPartySettings": "https://www.drupal.org/files/issues/filefield_paths-2831091-2.patch"
+            }         
         },
         "drupal-core-project-message": {
             "include-keys": [
